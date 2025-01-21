@@ -1,4 +1,4 @@
-# flrsh-dev/cran-checks/check-pkg
+# ricochet-rs/cran-checks/check-pkg
 
 Identifies if there are any failing CRAN check flavors for a published CRAN package. 
 
@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Get CRAN checks
-        uses: flrsh-dev/cran-checks/check-pkg@v0.1.0
+        uses: ricochet-rs/cran-checks/check-pkg@v0.1.0
         with:
           pkg: b64
 ```
