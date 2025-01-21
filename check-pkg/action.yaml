@@ -1,4 +1,4 @@
-name: flrsh-dev/cran-checks/check-pkg
+name: ricochet-rs/cran-checks/check-pkg
 description: |
   Check your CRAN package for failing CRAN checks. If the package does not exist on CRAN, the check will fail. If your package has the status NOTE or OK for all check flavors, then the test passes.
 author: 'Josiah Parry'
