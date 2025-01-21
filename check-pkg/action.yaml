@@ -27,7 +27,7 @@ runs:
       id: cran-check-status
       run: |
         pkg <- "${{ inputs.pkg }}"
-        fp <- paste0("https://flrsh-dev.github.io/cran-checks/", pkg, ".json")
+        fp <- paste0("https://ricochet-rs.github.io/cran-checks/", pkg, ".json")
 
         json <- tryCatch(readLines(fp),
           warning = function(e) {
