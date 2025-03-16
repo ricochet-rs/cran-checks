@@ -1,48 +1,31 @@
-check_url <- "https://cran.r-project.org/web/checks/check_summary_by_package.html"
+library(dplyr)
 
 
-check_results <- rvest::read_html(check_url) |>
-  rvest::html_node("table") |>
-  rvest::html_table()
-
-# create a look up table to map the scraped flavor names to the flavor values
-flavor_names <- c("r-devel-linux-x86_64-debian-clang", "r-devel-linux-x86_64-debian-gcc", "r-devel-linux-x86_64-fedora-clang", "r-devel-linux-x86_64-fedora-gcc", "r-devel-windows-x86_64", "r-patched-linux-x86_64", "r-release-linux-x86_64", "r-release-macos-arm64", "r-release-macos-x86_64", "r-release-windows-x86_64", "r-oldrel-macos-arm64", "r-oldrel-macos-x86_64", "r-oldrel-windows-x86_64")
-
-check_names <- c("r-develLinuxx86_64(Debian Clang)", "r-develLinuxx86_64(Debian GCC)", "r-develLinuxx86_64(Fedora Clang)", "r-develLinuxx86_64(Fedora GCC)", "r-develWindowsx86_64", "r-patchedLinuxx86_64", "r-releaseLinuxx86_64", "r-releasemacOSarm64", "r-releasemacOSx86_64", "r-releaseWindowsx86_64", "r-oldrelmacOSarm64", "r-oldrelmacOSx86_64", "r-oldrelWindowsx86_64")
-
-# create lookup vector
-flavor_lu <- setNames(flavor_names, check_names)
-
-# tidy up the results
-cli::cli_alert_info("Tidying results")
+cli::cli_alert_info("Fetching check results from CRAN")
+results <- tools::CRAN_check_results() |>
+  dplyr::as_tibble()
 
 
-check_long <- check_results |>
-  tidyr::pivot_longer(
-    cols = -c("Package", "Version", "Priority", "Maintainer"),
-    names_to = "check_env",
-    values_to = "check_status"
-  ) |>
-  dplyr::mutate(flavor = flavor_lu[check_env]) |>
-  dplyr::select(-check_env) |>
+cli::cli_alert_info("Reshaping or json")
+check_long <- results |>
   dplyr::rename_with(heck::to_snek_case) |>
-  dplyr::select(package, version, maintainer, flavor, check_status, priority) |>
+  dplyr::rename(check_status = status) |>
   tidyr::nest(results = -c("package", "maintainer", "priority"))
 
 # split by row
 splits <- split(check_long, check_long$package)
-
 # convert each row to json
-cli::cli_inform("Converting checks to json")
+cli::cli_alert_info("Converting checks to json")
 
 pkg_check_status <- lapply(
   splits,
   \(.x) jsonify::to_json(unclass(.x), unbox = TRUE)
 )
 
+cli::cli_alert_info("Writing json files")
+
 # write the results to json
 for (pkg in names(pkg_check_status)) {
   fp <- file.path("docs", paste0(pkg, ".json"))
-  cli::cli_inform(c("*" = "writing {.file {fp}}"))
   writeLines(pkg_check_status[[pkg]], fp)
 }
