@@ -1,0 +1,3275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<html>
+  <script src="https://cdn.tailwindcss.com/?plugins=forms,typography"></script>
+  <body class="bg-zinc-900 mx-auto prose-invert prose mt-10">
+    <h1 class="text-3xl font-mono">Failing CRAN Checks</h1>
+    <div class="text-sm border-b pb-4 border-zinc-500/50">
+      <p>The below packages are currently failing CRAN checks and are at
+      risk of being archived.</p>
+      <p>Access check result as json via: </p>
+      <pre class="bg-zinc-800">curl https://ricochet-rs.github.io/cran-checks/b64.json</pre>
+      <details>
+        <summary>JSON output</summary>
+        <pre class="bg-zinc-800">{
+    "package": "b64",
+    "priority": null,
+    "maintainer": "Josiah Parry &lt;josiah.parry@gmail.com&gt;",
+    "results": [
+        [
+            {
+                "flavor": "r-devel-linux-x86_64-debian-clang",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 52.17,
+                "t_check": 18.66,
+                "t_total": 70.83
+            },
+            {
+                "flavor": "r-devel-linux-x86_64-debian-gcc",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 41.3,
+                "t_check": 15.33,
+                "t_total": 56.63
+            },
+            {
+                "flavor": "r-devel-linux-x86_64-fedora-clang",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 119.74
+            },
+            {
+                "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 117.48
+            },
+            {
+                "flavor": "r-devel-macos-arm64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 37.0
+            },
+            {
+                "flavor": "r-devel-macos-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 75.0
+            },
+            {
+                "flavor": "r-devel-windows-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 61.0,
+                "t_check": 46.0,
+                "t_total": 107.0
+            },
+            {
+                "flavor": "r-patched-linux-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 52.73,
+                "t_check": 18.03,
+                "t_total": 70.76
+            },
+            {
+                "flavor": "r-release-linux-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 54.27,
+                "t_check": 17.9,
+                "t_total": 72.17
+            },
+            {
+                "flavor": "r-release-macos-arm64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 43.0
+            },
+            {
+                "flavor": "r-release-macos-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 94.0
+            },
+            {
+                "flavor": "r-release-windows-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 59.0,
+                "t_check": 48.0,
+                "t_total": 107.0
+            },
+            {
+                "flavor": "r-oldrel-macos-arm64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": null
+            },
+            {
+                "flavor": "r-oldrel-macos-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": 89.0
+            },
+            {
+                "flavor": "r-oldrel-windows-x86_64",
+                "version": "0.1.3",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": 60.0,
+                "t_check": 50.0,
+                "t_total": 110.0
+            }
+        ]
+    ]
+}</pre>
+      </details>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Version</th>
+          <th>Issue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=EmbedSOM" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">EmbedSOM</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/0len/EmbedSOM.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">0len</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=fedmatch" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">fedmatch</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/0len/fedmatch.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">0len</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=timeplyr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">timeplyr</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/0len/timeplyr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">0len</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=EFAtools" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">EFAtools</a>
+          </td>
+          <td>0.4.5</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/ATLAS/EFAtools.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">ATLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=FlexReg" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">FlexReg</a>
+          </td>
+          <td>1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/ATLAS/FlexReg.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">ATLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ICS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ICS</a>
+          </td>
+          <td>1.4-1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/ATLAS/ICS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">ATLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=datawizard" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">datawizard</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/ATLAS/datawizard.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">ATLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=greatR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">greatR</a>
+          </td>
+          <td>2.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/ATLAS/greatR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">ATLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=jlme" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">jlme</a>
+          </td>
+          <td>0.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/ATLAS/jlme.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">ATLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cpp11tesseract" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cpp11tesseract</a>
+          </td>
+          <td>5.3.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/clang19/cpp11tesseract.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang19</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cpp11tesseract" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cpp11tesseract</a>
+          </td>
+          <td>5.3.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/clang19/cpp11tesseract.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang19</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=raybevel" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">raybevel</a>
+          </td>
+          <td>0.1.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/clang19/raybevel.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang19</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=raybevel" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">raybevel</a>
+          </td>
+          <td>0.1.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/clang19/raybevel.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang19</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MPCR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MPCR</a>
+          </td>
+          <td>1.1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/MPCR" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Qval" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Qval</a>
+          </td>
+          <td>1.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/Qval" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RLRsim" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RLRsim</a>
+          </td>
+          <td>3.1-8</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/RLRsim" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SuperLearner" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SuperLearner</a>
+          </td>
+          <td>2.0-29</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/SuperLearner" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=clock" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">clock</a>
+          </td>
+          <td>0.7.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/clock" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=glmmTMB" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">glmmTMB</a>
+          </td>
+          <td>1.1.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/glmmTMB" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=lme4" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">lme4</a>
+          </td>
+          <td>1.1-36</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/lme4" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=nloptr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">nloptr</a>
+          </td>
+          <td>2.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/nloptr" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=quanteda" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">quanteda</a>
+          </td>
+          <td>4.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/quanteda" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rlibkriging" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rlibkriging</a>
+          </td>
+          <td>0.9-1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/rlibkriging" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=robustlmm" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">robustlmm</a>
+          </td>
+          <td>3.3-1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/robustlmm" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=smooth" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">smooth</a>
+          </td>
+          <td>4.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/smooth" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sparsevctrs" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sparsevctrs</a>
+          </td>
+          <td>0.3.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/sparsevctrs" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tinyVAST" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tinyVAST</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/tinyVAST" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tsgarch" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tsgarch</a>
+          </td>
+          <td>1.0.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/tsgarch" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ACEsearch" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ACEsearch</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/ACEsearch.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=BNrich" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">BNrich</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/BNrich.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=BRBVS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">BRBVS</a>
+          </td>
+          <td>0.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/BRBVS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Comp2ROC" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Comp2ROC</a>
+          </td>
+          <td>1.1.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/Comp2ROC.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=DWLS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">DWLS</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/DWLS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=EEMDlstm" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">EEMDlstm</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/EEMDlstm.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=FuncNN" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">FuncNN</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/FuncNN.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GPP" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GPP</a>
+          </td>
+          <td>0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/GPP.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GeneSelectR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GeneSelectR</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/GeneSelectR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=HybridDesign" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">HybridDesign</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/HybridDesign.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=IPDfromKM" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">IPDfromKM</a>
+          </td>
+          <td>0.1.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/IPDfromKM.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=LCF" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">LCF</a>
+          </td>
+          <td>1.7.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/LCF.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MALDIrppa" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MALDIrppa</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/MALDIrppa.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ML2Pvae" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ML2Pvae</a>
+          </td>
+          <td>1.0.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/ML2Pvae.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MVNBayesian" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MVNBayesian</a>
+          </td>
+          <td>0.0.8-11</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/MVNBayesian.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MaxentVariableSelection" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MaxentVariableSelection</a>
+          </td>
+          <td>1.0-3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/MaxentVariableSelection.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MonteCarlo" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MonteCarlo</a>
+          </td>
+          <td>1.0.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/MonteCarlo.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ORCME" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ORCME</a>
+          </td>
+          <td>2.0.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/ORCME.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=PartialNetwork" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">PartialNetwork</a>
+          </td>
+          <td>1.0.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/PartialNetwork.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=QRank" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">QRank</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/QRank.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=R2DT" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">R2DT</a>
+          </td>
+          <td>0.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/R2DT.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RMark" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RMark</a>
+          </td>
+          <td>3.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/RMark.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RcausalEGM" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RcausalEGM</a>
+          </td>
+          <td>0.3.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/RcausalEGM.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SMM" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SMM</a>
+          </td>
+          <td>1.0.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/SMM.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SQMtools" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SQMtools</a>
+          </td>
+          <td>1.6.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/SQMtools.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SystemicR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SystemicR</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/SystemicR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=TSLSTM" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">TSLSTM</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/TSLSTM.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=TSdeeplearning" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">TSdeeplearning</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/TSdeeplearning.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=WaveletLSTM" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">WaveletLSTM</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/WaveletLSTM.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=WikidataR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">WikidataR</a>
+          </td>
+          <td>2.3.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/WikidataR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ZIPFA" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ZIPFA</a>
+          </td>
+          <td>0.8.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/ZIPFA.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=aiRly" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">aiRly</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/aiRly.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=anovir" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">anovir</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/anovir.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=atlas" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">atlas</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/atlas.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=audio" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">audio</a>
+          </td>
+          <td>0.1-11</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/audio.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=baker" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">baker</a>
+          </td>
+          <td>1.0.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/baker.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bigchess" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bigchess</a>
+          </td>
+          <td>1.9.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/bigchess.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bioRad" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bioRad</a>
+          </td>
+          <td>0.7.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/bioRad.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bpgmm" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bpgmm</a>
+          </td>
+          <td>1.0.9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/bpgmm.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bursa" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bursa</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/bursa.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cfma" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cfma</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/cfma.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=circularEV" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">circularEV</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/circularEV.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cmrutils" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cmrutils</a>
+          </td>
+          <td>1.3.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/cmrutils.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=corrcoverage" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">corrcoverage</a>
+          </td>
+          <td>1.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/corrcoverage.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cumulocityr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cumulocityr</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/cumulocityr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=deepredeff" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">deepredeff</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/deepredeff.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=devFunc" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">devFunc</a>
+          </td>
+          <td>0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/devFunc.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=dracor" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">dracor</a>
+          </td>
+          <td>0.2.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/dracor.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=eemdARIMA" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">eemdARIMA</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/eemdARIMA.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=eemdTDNN" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">eemdTDNN</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/eemdTDNN.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=gen5helper" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">gen5helper</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/gen5helper.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=geniusr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">geniusr</a>
+          </td>
+          <td>1.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/geniusr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=iCAMP" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">iCAMP</a>
+          </td>
+          <td>1.3.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/iCAMP.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=imdbapi" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">imdbapi</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/imdbapi.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=istat" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">istat</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/istat.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=jackstrap" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">jackstrap</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/jackstrap.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=manhplot" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">manhplot</a>
+          </td>
+          <td>1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/manhplot.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=mappp" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">mappp</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/mappp.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=motif" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">motif</a>
+          </td>
+          <td>0.6.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/motif.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=motoRneuron" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">motoRneuron</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/motoRneuron.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=msig" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">msig</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/msig.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=nsROC" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">nsROC</a>
+          </td>
+          <td>1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/nsROC.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=oncrawlR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">oncrawlR</a>
+          </td>
+          <td>0.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/oncrawlR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ontoFAST" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ontoFAST</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/ontoFAST.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=openNLP" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">openNLP</a>
+          </td>
+          <td>0.2-7</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/openNLP.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=primate" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">primate</a>
+          </td>
+          <td>0.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/primate.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=pubtatordb" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">pubtatordb</a>
+          </td>
+          <td>0.1.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/pubtatordb.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=qpNCA" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">qpNCA</a>
+          </td>
+          <td>1.1.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/qpNCA.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rSHAPE" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rSHAPE</a>
+          </td>
+          <td>0.3.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/rSHAPE.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rde" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rde</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/rde.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=remote" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">remote</a>
+          </td>
+          <td>1.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/remote.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rocsvm.path" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rocsvm.path</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/rocsvm.path.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=scaffolder" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">scaffolder</a>
+          </td>
+          <td>0.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/scaffolder.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=shinyChakraUI" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">shinyChakraUI</a>
+          </td>
+          <td>1.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/shinyChakraUI.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=simexaft" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">simexaft</a>
+          </td>
+          <td>1.0.7.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/simexaft.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=simml" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">simml</a>
+          </td>
+          <td>0.3.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/simml.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sleepwalk" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sleepwalk</a>
+          </td>
+          <td>0.3.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/sleepwalk.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=spatialEco" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">spatialEco</a>
+          </td>
+          <td>2.0-2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/spatialEco.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sugarbag" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sugarbag</a>
+          </td>
+          <td>0.1.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/sugarbag.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=svrpath" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">svrpath</a>
+          </td>
+          <td>0.1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/svrpath.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tfprobability" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tfprobability</a>
+          </td>
+          <td>0.15.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/tfprobability.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=trustedtimestamping" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">trustedtimestamping</a>
+          </td>
+          <td>0.2.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/trustedtimestamping.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=vhcub" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">vhcub</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/donttest/vhcub.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">donttest</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=PLNmodels" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">PLNmodels</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/gcc15/PLNmodels.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc15</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=stream" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">stream</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/gcc15/stream.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc15</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tiledb" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tiledb</a>
+          </td>
+          <td>0.30.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-ASAN/tiledb" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-ASAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GRIN2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GRIN2</a>
+          </td>
+          <td>1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/GRIN2" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Mega2R" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Mega2R</a>
+          </td>
+          <td>1.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/Mega2R" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ProFAST" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ProFAST</a>
+          </td>
+          <td>1.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/ProFAST" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RSQLite" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RSQLite</a>
+          </td>
+          <td>2.3.9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/RSQLite" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SBMTrees" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SBMTrees</a>
+          </td>
+          <td>1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/SBMTrees" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bayesPop" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bayesPop</a>
+          </td>
+          <td>11.0-2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/bayesPop" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=clock" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">clock</a>
+          </td>
+          <td>0.7.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/clock" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=crfsuite" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">crfsuite</a>
+          </td>
+          <td>0.4.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/crfsuite" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cxhull" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cxhull</a>
+          </td>
+          <td>0.7.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/cxhull" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=designmatch" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">designmatch</a>
+          </td>
+          <td>0.5.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/designmatch" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=dexter" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">dexter</a>
+          </td>
+          <td>1.5.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/dexter" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=dexterMST" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">dexterMST</a>
+          </td>
+          <td>0.9.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/dexterMST" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=dnapath" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">dnapath</a>
+          </td>
+          <td>0.7.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/dnapath" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=gdalcubes" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">gdalcubes</a>
+          </td>
+          <td>0.7.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/gdalcubes" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=multinet" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">multinet</a>
+          </td>
+          <td>4.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/multinet" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rliger" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rliger</a>
+          </td>
+          <td>2.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/rliger" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=smooth" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">smooth</a>
+          </td>
+          <td>4.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/smooth" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sparsevctrs" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sparsevctrs</a>
+          </td>
+          <td>0.3.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/sparsevctrs" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=thor" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">thor</a>
+          </td>
+          <td>1.1.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/gcc-UBSAN/thor" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">gcc-UBSAN</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=FAS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">FAS</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/FAS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MultiBD" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MultiBD</a>
+          </td>
+          <td>0.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/MultiBD.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=NScluster" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">NScluster</a>
+          </td>
+          <td>1.3.6-1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/NScluster.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Rmixmod" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Rmixmod</a>
+          </td>
+          <td>2.1.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/Rmixmod.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=detrendr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">detrendr</a>
+          </td>
+          <td>0.6.15</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/detrendr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=eBsc" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">eBsc</a>
+          </td>
+          <td>4.17</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/eBsc.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=lowpassFilter" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">lowpassFilter</a>
+          </td>
+          <td>1.0-2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/lowpassFilter.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rayrender" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rayrender</a>
+          </td>
+          <td>0.34.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/rayrender.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rayrender" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rayrender</a>
+          </td>
+          <td>0.34.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/rayrender.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rayvertex" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rayvertex</a>
+          </td>
+          <td>0.11.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/rayvertex.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rayvertex" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rayvertex</a>
+          </td>
+          <td>0.11.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/rayvertex.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=recometrics" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">recometrics</a>
+          </td>
+          <td>0.1.6-3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/recometrics.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rubias" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rubias</a>
+          </td>
+          <td>0.3.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/rubias.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=spsurv" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">spsurv</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Intel/spsurv.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Intel</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=CAESAR.Suite" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">CAESAR.Suite</a>
+          </td>
+          <td>0.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/CAESAR.Suite.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ComBatFamQC" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ComBatFamQC</a>
+          </td>
+          <td>1.0.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/ComBatFamQC.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GPFDA" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GPFDA</a>
+          </td>
+          <td>3.1.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/GPFDA.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RcppDPR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RcppDPR</a>
+          </td>
+          <td>0.1.9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/RcppDPR.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RcppDPR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RcppDPR</a>
+          </td>
+          <td>0.1.9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/RcppDPR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=VSURF" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">VSURF</a>
+          </td>
+          <td>1.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/VSURF.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=anticlust" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">anticlust</a>
+          </td>
+          <td>0.8.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/anticlust.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=audio" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">audio</a>
+          </td>
+          <td>0.1-11</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/audio.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=audio" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">audio</a>
+          </td>
+          <td>0.1-11</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/audio.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bbmle" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bbmle</a>
+          </td>
+          <td>1.0.25.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/bbmle.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cbq" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cbq</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/cbq.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=checkhelper" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">checkhelper</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/checkhelper.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cobs" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cobs</a>
+          </td>
+          <td>1.3-9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/cobs.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=gpg" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">gpg</a>
+          </td>
+          <td>1.3.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/gpg.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=hacksig" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">hacksig</a>
+          </td>
+          <td>0.1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/hacksig.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=highs" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">highs</a>
+          </td>
+          <td>1.9.0-1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/highs.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=highs" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">highs</a>
+          </td>
+          <td>1.9.0-1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/highs.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=image.textlinedetector" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">image.textlinedetector</a>
+          </td>
+          <td>0.2.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/image.textlinedetector.log" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=image.textlinedetector" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">image.textlinedetector</a>
+          </td>
+          <td>0.2.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/image.textlinedetector.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=jamba" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">jamba</a>
+          </td>
+          <td>1.0.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/jamba.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=lme4" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">lme4</a>
+          </td>
+          <td>1.1-36</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/lme4.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=massiveGST" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">massiveGST</a>
+          </td>
+          <td>1.2.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/massiveGST.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=odbc" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">odbc</a>
+          </td>
+          <td>1.6.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/odbc.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=retistruct" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">retistruct</a>
+          </td>
+          <td>0.8.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/retistruct.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=BacenAPI" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">BacenAPI</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/BacenAPI.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=OxSR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">OxSR</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/OxSR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SudokuDesigns" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SudokuDesigns</a>
+          </td>
+          <td>1.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/SudokuDesigns.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=brokenstick" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">brokenstick</a>
+          </td>
+          <td>2.5.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/brokenstick.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=distfreereg" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">distfreereg</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/distfreereg.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=fucom" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">fucom</a>
+          </td>
+          <td>0.0.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/fucom.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=kbal" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">kbal</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/kbal.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=anticlust" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">anticlust</a>
+          </td>
+          <td>0.8.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/anticlust.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bbmle" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bbmle</a>
+          </td>
+          <td>1.0.25.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/bbmle.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=datawizard" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">datawizard</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/datawizard.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=httr2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">httr2</a>
+          </td>
+          <td>1.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/httr2.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=jlme" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">jlme</a>
+          </td>
+          <td>0.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/jlme.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MDFS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MDFS</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noRemap/MDFS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noRemap</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=interpret" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">interpret</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noRemap/interpret.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noRemap</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=stochvolTMB" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">stochvolTMB</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noRemap/stochvolTMB.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noRemap</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=CodeDepends" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">CodeDepends</a>
+          </td>
+          <td>0.6.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/CodeDepends.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=CohortSymmetry" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">CohortSymmetry</a>
+          </td>
+          <td>0.2.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/CohortSymmetry.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=DIDmultiplegt" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">DIDmultiplegt</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/DIDmultiplegt.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=EHRtemporalVariability" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">EHRtemporalVariability</a>
+          </td>
+          <td>1.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/EHRtemporalVariability.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GDPuc" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GDPuc</a>
+          </td>
+          <td>1.0.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/GDPuc.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GMMAT" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GMMAT</a>
+          </td>
+          <td>1.4.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/GMMAT.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=IOHanalyzer" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">IOHanalyzer</a>
+          </td>
+          <td>0.1.8.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/IOHanalyzer.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ISEtools" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ISEtools</a>
+          </td>
+          <td>3.2.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/ISEtools.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=InterpretMSSpectrum" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">InterpretMSSpectrum</a>
+          </td>
+          <td>1.4.5</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/InterpretMSSpectrum.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MARVEL" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MARVEL</a>
+          </td>
+          <td>1.4.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/MARVEL.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MMDvariance" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MMDvariance</a>
+          </td>
+          <td>0.0.9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/MMDvariance.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MOCHA" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MOCHA</a>
+          </td>
+          <td>1.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/MOCHA.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MetabolomicsBasics" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MetabolomicsBasics</a>
+          </td>
+          <td>1.4.5</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/MetabolomicsBasics.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=MoBPS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MoBPS</a>
+          </td>
+          <td>1.6.64</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/MoBPS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=NutrienTrackeR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">NutrienTrackeR</a>
+          </td>
+          <td>1.3.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/NutrienTrackeR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ParallelPC" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ParallelPC</a>
+          </td>
+          <td>1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/ParallelPC.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=PlackettLuce" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">PlackettLuce</a>
+          </td>
+          <td>0.4.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/PlackettLuce.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RKHSMetaMod" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RKHSMetaMod</a>
+          </td>
+          <td>1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/RKHSMetaMod.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RPEIF" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RPEIF</a>
+          </td>
+          <td>1.2.4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/RPEIF.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RVAideMemoire" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RVAideMemoire</a>
+          </td>
+          <td>0.9-83-7</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/RVAideMemoire.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Rediscover" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Rediscover</a>
+          </td>
+          <td>0.3.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/Rediscover.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RepeatedHighDim" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RepeatedHighDim</a>
+          </td>
+          <td>2.3.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/RepeatedHighDim.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Rgff" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Rgff</a>
+          </td>
+          <td>0.1.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/Rgff.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SRTsim" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SRTsim</a>
+          </td>
+          <td>0.99.7</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/SRTsim.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SpaDES.core" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SpaDES.core</a>
+          </td>
+          <td>1.0.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/SpaDES.core.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=TwoWayFEWeights" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">TwoWayFEWeights</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/TwoWayFEWeights.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=archeofrag" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">archeofrag</a>
+          </td>
+          <td>1.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/archeofrag.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=asteRisk" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">asteRisk</a>
+          </td>
+          <td>1.4.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/asteRisk.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bulkAnalyseR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bulkAnalyseR</a>
+          </td>
+          <td>1.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/bulkAnalyseR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=circlize" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">circlize</a>
+          </td>
+          <td>0.4.16</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/circlize.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=clustcurv" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">clustcurv</a>
+          </td>
+          <td>2.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/clustcurv.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=corncob" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">corncob</a>
+          </td>
+          <td>0.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/corncob.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=doRNG" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">doRNG</a>
+          </td>
+          <td>1.8.6.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/doRNG.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=eclust" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">eclust</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/eclust.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=fuzzyjoin" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">fuzzyjoin</a>
+          </td>
+          <td>0.1.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/fuzzyjoin.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=glmmSeq" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">glmmSeq</a>
+          </td>
+          <td>0.5.5</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/glmmSeq.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=interplex" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">interplex</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/interplex.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=kpcalg" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">kpcalg</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/kpcalg.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=loon" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">loon</a>
+          </td>
+          <td>1.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/loon.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=magmaR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">magmaR</a>
+          </td>
+          <td>1.0.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/magmaR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=micd" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">micd</a>
+          </td>
+          <td>1.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/micd.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=mutoss" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">mutoss</a>
+          </td>
+          <td>0.1-13</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/mutoss.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=net4pg" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">net4pg</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/net4pg.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=openSkies" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">openSkies</a>
+          </td>
+          <td>1.2.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/openSkies.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=outlierensembles" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">outlierensembles</a>
+          </td>
+          <td>0.1.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/outlierensembles.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=pegas" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">pegas</a>
+          </td>
+          <td>1.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/pegas.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=proftools" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">proftools</a>
+          </td>
+          <td>0.99-3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/proftools.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=proxyC" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">proxyC</a>
+          </td>
+          <td>0.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/proxyC.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rSpectral" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rSpectral</a>
+          </td>
+          <td>1.0.0.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/rSpectral.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=romic" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">romic</a>
+          </td>
+          <td>1.1.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/romic.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=scDiffCom" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">scDiffCom</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/scDiffCom.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=singleCellHaystack" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">singleCellHaystack</a>
+          </td>
+          <td>1.0.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/singleCellHaystack.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sweep" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sweep</a>
+          </td>
+          <td>0.2.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/sweep.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=timetk" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">timetk</a>
+          </td>
+          <td>2.9.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/timetk.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=volcano3D" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">volcano3D</a>
+          </td>
+          <td>2.0.9</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/volcano3D.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=zenplots" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">zenplots</a>
+          </td>
+          <td>1.0.6</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/zenplots.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=EgoCor" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">EgoCor</a>
+          </td>
+          <td>1.3.2</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/EgoCor.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=acumos" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">acumos</a>
+          </td>
+          <td>0.4-4</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/acumos.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=corncob" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">corncob</a>
+          </td>
+          <td>0.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/corncob.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=datawizard" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">datawizard</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/datawizard.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=demic" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">demic</a>
+          </td>
+          <td>2.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/demic.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=httr2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">httr2</a>
+          </td>
+          <td>1.1.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/httr2.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=jlme" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">jlme</a>
+          </td>
+          <td>0.4.1</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/jlme.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sarima" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sarima</a>
+          </td>
+          <td>0.9.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/sarima.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=vvconverter" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">vvconverter</a>
+          </td>
+          <td>0.5.10</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/OpenBLAS/vvconverter.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">OpenBLAS</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=DataGraph" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">DataGraph</a>
+          </td>
+          <td>1.2.14</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/DataGraph.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=fastcmprsk" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">fastcmprsk</a>
+          </td>
+          <td>1.24.10</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/fastcmprsk.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ProTrackR2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ProTrackR2</a>
+          </td>
+          <td>0.0.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/ProTrackR2.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=BioCro" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">BioCro</a>
+          </td>
+          <td>3.2.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/BioCro.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=BoomSpikeSlab" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">BoomSpikeSlab</a>
+          </td>
+          <td>1.2.6</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/BoomSpikeSlab.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=CMF" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">CMF</a>
+          </td>
+          <td>1.0.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/CMF.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=HDCD" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">HDCD</a>
+          </td>
+          <td>1.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/HDCD.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=JavaGD" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">JavaGD</a>
+          </td>
+          <td>0.6-5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/JavaGD.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=PRIMME" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">PRIMME</a>
+          </td>
+          <td>3.2-6</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/PRIMME.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=OpenMx" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">OpenMx</a>
+          </td>
+          <td>2.21.13</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/OpenMx.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=PBSmapping" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">PBSmapping</a>
+          </td>
+          <td>2.74.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/PBSmapping.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RSiena" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RSiena</a>
+          </td>
+          <td>1.4.7</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/RSiena.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=epiworldR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">epiworldR</a>
+          </td>
+          <td>0.6.1.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/epiworldR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Rogue" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Rogue</a>
+          </td>
+          <td>2.1.6</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/Rogue.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Rook" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Rook</a>
+          </td>
+          <td>1.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/Rook.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RPostgreSQL" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RPostgreSQL</a>
+          </td>
+          <td>0.7-7</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/RPostgreSQL.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=grandR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">grandR</a>
+          </td>
+          <td>0.2.6</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/grandR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=adfExplorer" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">adfExplorer</a>
+          </td>
+          <td>2.0.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/adfExplorer.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=LipidMS" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">LipidMS</a>
+          </td>
+          <td>3.0.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/LipidMS.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=SOMMD" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">SOMMD</a>
+          </td>
+          <td>0.1.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/SOMMD.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=Rtwobitlib" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">Rtwobitlib</a>
+          </td>
+          <td>0.3.6</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/Rtwobitlib.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RSQLite" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RSQLite</a>
+          </td>
+          <td>2.3.9</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/RSQLite.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RMariaDB" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RMariaDB</a>
+          </td>
+          <td>1.3.4</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/RMariaDB.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bsts" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bsts</a>
+          </td>
+          <td>0.9.10</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/bsts.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=carbondate" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">carbondate</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/carbondate.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RPostgres" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RPostgres</a>
+          </td>
+          <td>1.4.8</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/RPostgres.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ggraph" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ggraph</a>
+          </td>
+          <td>2.2.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/ggraph.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=deBif" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">deBif</a>
+          </td>
+          <td>0.1.9</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/deBif.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=economiccomplexity" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">economiccomplexity</a>
+          </td>
+          <td>2.0.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/economiccomplexity.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bigalgebra" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bigalgebra</a>
+          </td>
+          <td>1.1.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/bigalgebra.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=divo" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">divo</a>
+          </td>
+          <td>1.0.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/divo.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=densityClust" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">densityClust</a>
+          </td>
+          <td>0.3.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/densityClust.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=creditr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">creditr</a>
+          </td>
+          <td>0.6.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/creditr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=alcyon" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">alcyon</a>
+          </td>
+          <td>0.7.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/alcyon.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=cpp11bigwig" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">cpp11bigwig</a>
+          </td>
+          <td>0.1.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/cpp11bigwig.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=flexrsurv" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">flexrsurv</a>
+          </td>
+          <td>2.0.18</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/flexrsurv.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=hdf5r" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">hdf5r</a>
+          </td>
+          <td>1.3.12</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/hdf5r.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=marquee" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">marquee</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/marquee.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=httpgd" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">httpgd</a>
+          </td>
+          <td>2.0.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/httpgd.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ijtiff" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ijtiff</a>
+          </td>
+          <td>3.0.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/ijtiff.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ergmgp" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ergmgp</a>
+          </td>
+          <td>0.1-2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/ergmgp.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=hilbert" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">hilbert</a>
+          </td>
+          <td>0.2.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/hilbert.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=fastpng" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">fastpng</a>
+          </td>
+          <td>0.1.7</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/fastpng.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=indexthis" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">indexthis</a>
+          </td>
+          <td>1.0.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/indexthis.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=feather" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">feather</a>
+          </td>
+          <td>0.3.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/feather.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=heumilkr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">heumilkr</a>
+          </td>
+          <td>0.2.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/heumilkr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=meltr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">meltr</a>
+          </td>
+          <td>1.0.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/meltr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=gmp" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">gmp</a>
+          </td>
+          <td>0.7-5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/gmp.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=frailtypack" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">frailtypack</a>
+          </td>
+          <td>3.7.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/frailtypack.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=drclust" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">drclust</a>
+          </td>
+          <td>0.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/drclust.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=misha" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">misha</a>
+          </td>
+          <td>4.3.6</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/misha.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=systemfonts" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">systemfonts</a>
+          </td>
+          <td>1.2.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/systemfonts.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=textshaping" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">textshaping</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/textshaping.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=ordinalgmifs" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">ordinalgmifs</a>
+          </td>
+          <td>1.0.8</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/ordinalgmifs.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=parseLatex" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">parseLatex</a>
+          </td>
+          <td>0.3.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/parseLatex.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=png" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">png</a>
+          </td>
+          <td>0.1-8</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/png.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=precondition" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">precondition</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/precondition.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=lotri" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">lotri</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/lotri.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rJava" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rJava</a>
+          </td>
+          <td>1.0-11</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/rJava.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rar" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rar</a>
+          </td>
+          <td>0.0.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/rar.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=readr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">readr</a>
+          </td>
+          <td>2.1.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/readr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=sass" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">sass</a>
+          </td>
+          <td>0.4.9</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/sass.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=torch" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">torch</a>
+          </td>
+          <td>0.14.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/torch.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=naryn" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">naryn</a>
+          </td>
+          <td>2.6.30</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/naryn.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=minty" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">minty</a>
+          </td>
+          <td>0.0.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/minty.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=svglite" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">svglite</a>
+          </td>
+          <td>2.1.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/svglite.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tidyr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tidyr</a>
+          </td>
+          <td>1.3.1</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/tidyr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=transformr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">transformr</a>
+          </td>
+          <td>0.1.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/transformr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tweenr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tweenr</a>
+          </td>
+          <td>2.0.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/tweenr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=vroom" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">vroom</a>
+          </td>
+          <td>1.6.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/vroom.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=readNSx" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">readNSx</a>
+          </td>
+          <td>0.0.5</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/readNSx.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=yyjsonr" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">yyjsonr</a>
+          </td>
+          <td>0.1.20</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/yyjsonr.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=particles" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">particles</a>
+          </td>
+          <td>0.2.4</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/particles.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=unigd" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">unigd</a>
+          </td>
+          <td>0.1.3</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/unigd.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=roxygen2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">roxygen2</a>
+          </td>
+          <td>7.3.2</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/roxygen2.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=seqminer" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">seqminer</a>
+          </td>
+          <td>9.7</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/seqminer.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=stringi" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">stringi</a>
+          </td>
+          <td>1.8.4</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/stringi.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tau" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tau</a>
+          </td>
+          <td>0.0-26</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/tau.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tgstat" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tgstat</a>
+          </td>
+          <td>2.3.28</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/tgstat.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=treesitter" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">treesitter</a>
+          </td>
+          <td>0.1.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/treesitter.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=this.path" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">this.path</a>
+          </td>
+          <td>2.6.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/this.path.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=nimble" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">nimble</a>
+          </td>
+          <td>1.3.0</td>
+          <td>
+            <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/nimble.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=rstpm2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">rstpm2</a>
+          </td>
+          <td>1.6.6.1</td>
+          <td>
+            <a href="https://github.com/kalibera/cran-checks/tree/master/rcnst/results/rstpm2" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rcnst</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GGMselect" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GGMselect</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/GGMselect.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=PottsUtils" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">PottsUtils</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/PottsUtils.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RPANDA" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RPANDA</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/RPANDA.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=WpProj" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">WpProj</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/WpProj.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=approxOT" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">approxOT</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/approxOT.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=chngpt" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">chngpt</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/chngpt.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=mvPot" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">mvPot</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/mvPot.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=pwrFDR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">pwrFDR</a>
+          </td>
+          <td>NA</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/Strict/pwrFDR.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">Strict</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=RSiena" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">RSiena</a>
+          </td>
+          <td>1.4.7</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/valgrind/RSiena" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">valgrind</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=tinyVAST" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">tinyVAST</a>
+          </td>
+          <td>1.0.0</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/valgrind/tinyVAST" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">valgrind</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+</html>

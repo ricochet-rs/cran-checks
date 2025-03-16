@@ -29,3 +29,5 @@ for (pkg in names(pkg_check_status)) {
   fp <- file.path("docs", paste0(pkg, ".json"))
   writeLines(pkg_check_status[[pkg]], fp)
 }
+
+source("make-index.R")
