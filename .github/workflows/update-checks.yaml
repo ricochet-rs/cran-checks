@@ -3,6 +3,7 @@ name: Update CRAN checks
 on:
   schedule:
     - cron: '0 */6 * * *'
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -28,7 +29,6 @@ jobs:
           packages: |
             any::dplyr
             any::tidyr
-            any::rvest
             any::heck
             any::jsonify
 
