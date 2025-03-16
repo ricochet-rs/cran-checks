@@ -39,8 +39,14 @@ index_html <- htmltools::tags$html(
     htmltools::h1("Failing CRAN Checks", class = "text-3xl font-mono"),
     htmltools::div(
       htmltools::p(
-        "The below packages are currently failing CRAN checks and are at
-      risk of being archived."
+        "The below packages are currently failing CRAN checks and are at risk of being archived.",
+        "Use the ",
+        htmltools::a(
+          "GitHub Action ",
+          href = "https://github.com/ricochet-rs/cran-checks?tab=readme-ov-file#usage",
+          class = "font-semibold decoration-green-500 decoration-2"
+        ),
+        "to stay notified!"
       ),
       htmltools::p("Access check result as json via: "),
       htmltools::pre(
@@ -67,7 +73,16 @@ index_html <- htmltools::tags$html(
       ),
       htmltools::tags$tbody(table_rows)
     ),
-    class = "bg-zinc-900 mx-auto prose-invert prose mt-10"
+    htmltools::p(
+      "Made with 🤍 by ",
+      htmltools::a(
+        "ricochet",
+        href = "https://ricochet.rs",
+        class = "font-mono font-bold decoration-dotted"
+      ),
+      class = "text-zinc-500 text-sm"
+    ),
+    class = "bg-zinc-900 mx-auto prose-invert prose my-10"
   )
 )
 

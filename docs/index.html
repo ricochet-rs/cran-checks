@@ -8,11 +8,15 @@
 </head>
 <html>
   <script src="https://cdn.tailwindcss.com/?plugins=forms,typography"></script>
-  <body class="bg-zinc-900 mx-auto prose-invert prose mt-10">
+  <body class="bg-zinc-900 mx-auto prose-invert prose my-10">
     <h1 class="text-3xl font-mono">Failing CRAN Checks</h1>
     <div class="text-sm border-b pb-4 border-zinc-500/50">
-      <p>The below packages are currently failing CRAN checks and are at
-      risk of being archived.</p>
+      <p>
+        The below packages are currently failing CRAN checks and are at risk of being archived.
+        Use the 
+        <a href="https://github.com/ricochet-rs/cran-checks?tab=readme-ov-file#usage" class="font-semibold decoration-green-500 decoration-2">GitHub Action </a>
+        to stay notified!
+      </p>
       <p>Access check result as json via: </p>
       <pre class="bg-zinc-800">curl https://ricochet-rs.github.io/cran-checks/b64.json</pre>
       <details>
@@ -3270,6 +3274,10 @@
         </tr>
       </tbody>
     </table>
+    <p class="text-zinc-500 text-sm">
+      Made with 🤍 by 
+      <a href="https://ricochet.rs" class="font-mono font-bold decoration-dotted">ricochet</a>
+    </p>
   </body>
 </html>
 </html>
