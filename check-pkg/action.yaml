@@ -51,7 +51,7 @@ runs:
             "Review logs at ", 
             "https://cran.r-project.org/web/checks/check_results_", pkg, ".html"
           )
-        }  else if (!is.null(res$issues)) {
+        }  else if (!is.data.frame(res$issues)) {
           issues <- res$issues[[1]]
           stop(
             "Additional issues detected:\n",
