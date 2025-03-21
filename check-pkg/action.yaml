@@ -51,7 +51,12 @@ runs:
             "Review logs at ", 
             "https://cran.r-project.org/web/checks/check_results_", pkg, ".html"
           )
+        }  else if (!is.null(res$issues)) {
+          issues <- res$issues[[1]]
+          stop(
+            "Additional issues detected:\n",
+            sprintf("  - %s: %s\n", issues$kind, issues$href)
+          )
         }
-        
         message("\u2713 `", pkg, "` has no warnings or errors")
       shell: Rscript {0}
