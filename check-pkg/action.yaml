@@ -44,7 +44,7 @@ runs:
             "Review logs at ", 
             "https://cran.r-project.org/web/checks/check_results_", pkg, ".html"
           )
-        } else if (any("WARN" %in% res$results[[1]]$check_status)) {
+        } else if (any(grepl("WARN", res$results[[1]]$check_status))) {
           stop(
             "Warnings found in CRAN checks",
             "\n",

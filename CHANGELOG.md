@@ -1,5 +1,7 @@
 # CRAN checks
 
+- Fixes check so that warnings are properly reported. 
+
 ## v0.1.2
 
 - Reports additional issues <https://github.com/ricochet-rs/cran-checks/issues/3>
