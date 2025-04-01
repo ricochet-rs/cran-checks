@@ -32,7 +32,16 @@
     "priority": null,
     "maintainer": "Josiah Parry &lt;josiah.parry@gmail.com&gt;",
     "issues": [
-        {}
+        [
+            {
+                "kind": "M1mac",
+                "href": "https://www.stats.ox.ac.uk/pub/bdr/M1mac/b64.log"
+            },
+            {
+                "kind": "M1mac",
+                "href": "https://www.stats.ox.ac.uk/pub/bdr/M1mac/b64.out"
+            }
+        ]
     ],
     "results": [
         [
@@ -83,12 +92,12 @@
             },
             {
                 "flavor": "r-devel-macos-x86_64",
-                "version": "0.1.3",
-                "check_status": "OK",
+                "version": "0.1.4",
+                "check_status": "WARNING",
                 "flags": "",
                 "t_install": null,
                 "t_check": null,
-                "t_total": 75.0
+                "t_total": 96.0
             },
             {
                 "flavor": "r-devel-windows-x86_64",
@@ -597,15 +606,6 @@
           <td>0.0.9</td>
           <td>
             <a href="https://www.stats.ox.ac.uk/pub/bdr/noSuggests/MMDvariance.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noSuggests</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://cran.r-project.org/package=MPCR" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">MPCR</a>
-          </td>
-          <td>1.1.2</td>
-          <td>
-            <a href="https://www.stats.ox.ac.uk/pub/bdr/memtests/clang-UBSAN/MPCR" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">clang-UBSAN</a>
           </td>
         </tr>
         <tr>
@@ -1344,6 +1344,15 @@
           <td>0.4.0</td>
           <td>
             <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/brulee.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=bsplus" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">bsplus</a>
+          </td>
+          <td>0.1.4</td>
+          <td>
+            <a href="https://github.com/kalibera/cran-checks/tree/master/rlibro/results/bsplus" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rlibro</a>
           </td>
         </tr>
         <tr>
