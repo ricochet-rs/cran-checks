@@ -1,0 +1,1 @@
+{"package":"doblin","priority":null,"maintainer":"Adrian Serohijos <adrian.serohijos@umontreal.ca>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.1","check_status":"OK","flags":"","t_install":null,"t_check":null,"t_total":121.71}]]}
