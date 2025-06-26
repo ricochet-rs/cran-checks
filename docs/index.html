@@ -28,10 +28,20 @@
       <details>
         <summary>JSON output</summary>
         <pre class="bg-zinc-800">{
-    "package": "b64",
-    "priority": null,
-    "maintainer": "Josiah Parry &lt;josiah.parry@gmail.com&gt;",
+    "package": [
+        "b64",
+        "b64"
+    ],
+    "priority": [
+        null,
+        ""
+    ],
+    "maintainer": [
+        "Josiah Parry &lt;josiah.parry@gmail.com&gt;",
+        "Josiah Parry &lt;josiah.parry@gmail.com&gt;"
+    ],
     "issues": [
+        {},
         {}
     ],
     "results": [
@@ -50,9 +60,9 @@
                 "version": "0.1.6",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 45.42,
-                "t_check": 16.9,
-                "t_total": 62.32
+                "t_install": 44.33,
+                "t_check": 16.64,
+                "t_total": 60.97
             },
             {
                 "flavor": "r-devel-linux-x86_64-fedora-clang",
@@ -80,15 +90,6 @@
                 "t_install": 65.0,
                 "t_check": 50.0,
                 "t_total": 115.0
-            },
-            {
-                "flavor": "r-patched-linux-x86_64",
-                "version": "0.1.6",
-                "check_status": "OK",
-                "flags": "",
-                "t_install": 54.63,
-                "t_check": 18.26,
-                "t_total": 72.89
             },
             {
                 "flavor": "r-release-linux-x86_64",
@@ -122,9 +123,9 @@
                 "version": "0.1.6",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 63.0,
-                "t_check": 47.0,
-                "t_total": 110.0
+                "t_install": 61.0,
+                "t_check": 46.0,
+                "t_total": 107.0
             },
             {
                 "flavor": "r-oldrel-macos-arm64",
@@ -152,6 +153,17 @@
                 "t_install": 61.0,
                 "t_check": 50.0,
                 "t_total": 111.0
+            }
+        ],
+        [
+            {
+                "flavor": "r-patched-linux-x86_64",
+                "version": "",
+                "check_status": "OK",
+                "flags": "",
+                "t_install": null,
+                "t_check": null,
+                "t_total": null
             }
         ]
     ]
@@ -1929,15 +1941,6 @@
           <td>2.6.30</td>
           <td>
             <a href="https://raw.githubusercontent.com/kalibera/cran-checks/master/rchk/results/naryn.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">rchk</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://cran.r-project.org/package=neotoma2" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">neotoma2</a>
-          </td>
-          <td>1.0.5</td>
-          <td>
-            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/neotoma2.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
           </td>
         </tr>
         <tr>
