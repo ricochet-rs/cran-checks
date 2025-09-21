@@ -1,0 +1,1 @@
+{"package":"ggDNAvis","priority":null,"maintainer":"Evelyn Jade <evelynjade42@gmail.com>","issues":[[{"kind":"M1mac","href":"https://www.stats.ox.ac.uk/pub/bdr/M1mac/ggDNAvis.out"}]],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"0.2.1","check_status":"OK","flags":"","t_install":null,"t_check":null,"t_total":167.0}]]}
