@@ -1,0 +1,1 @@
+{"package":"projoint","priority":null,"maintainer":"Yusaku Horiuchi <yusaku.horiuchi@gmail.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"1.0.6","check_status":"NOTE","flags":"","t_install":23.0,"t_check":395.0,"t_total":418.0}]]}

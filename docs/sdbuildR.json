@@ -1,0 +1,1 @@
+{"package":"sdbuildR","priority":null,"maintainer":"Kyra Caitlin Evers <kyra.c.evers@gmail.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"1.0.5","check_status":"OK","flags":"","t_install":20.0,"t_check":335.0,"t_total":355.0}]]}
