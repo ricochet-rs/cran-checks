@@ -1,0 +1,1 @@
+{"package":"XYomics","priority":null,"maintainer":"Enrico Glaab <enrico.glaab@uni.lu>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.1","check_status":"OK","flags":"","t_install":115.0,"t_check":715.64,"t_total":830.64}]]}
