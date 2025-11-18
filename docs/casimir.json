@@ -1,0 +1,1 @@
+{"package":"casimir","priority":null,"maintainer":"Maximilian Kähler <m.kaehler@dnb.de>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.3.3","check_status":"OK","flags":"","t_install":10.0,"t_check":196.0,"t_total":206.0}]]}
