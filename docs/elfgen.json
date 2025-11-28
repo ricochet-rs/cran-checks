@@ -1,0 +1,1 @@
+{"package":"elfgen","priority":null,"maintainer":"Connor Brogan <connor.brogan@deq.virginia.gov>","issues":[[{"kind":"donttest","href":"https://www.stats.ox.ac.uk/pub/bdr/donttest/elfgen.out"}]],"results":[[{"flavor":"r-oldrel-macos-arm64","version":"2.3.3","check_status":"OK","flags":"","t_install":null,"t_check":null,"t_total":null}]]}
