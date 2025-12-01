@@ -1,0 +1,1 @@
+{"package":"heavytails","priority":null,"maintainer":"Farid Rohan <frohan@ur.rochester.edu>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.1","check_status":"OK","flags":"","t_install":10.0,"t_check":30.22,"t_total":40.22}]]}

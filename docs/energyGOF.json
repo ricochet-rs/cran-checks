@@ -1,0 +1,1 @@
+{"package":"energyGOF","priority":null,"maintainer":"John Haman <mail@johnhaman.org>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1","check_status":"OK","flags":"","t_install":17.0,"t_check":90.51,"t_total":107.51}]]}

@@ -1,0 +1,1 @@
+{"package":"distionary","priority":null,"maintainer":"Vincenzo Coia <vincenzo.coia@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.0","check_status":"OK","flags":"","t_install":18.0,"t_check":207.26,"t_total":225.26}]]}

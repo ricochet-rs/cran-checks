@@ -1,0 +1,1 @@
+{"package":"ExpBites","priority":null,"maintainer":"Nicolas Moiroux <nicolas.moiroux@ird.fr>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.3","check_status":"OK","flags":"","t_install":16.0,"t_check":86.66,"t_total":102.66}]]}

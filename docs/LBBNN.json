@@ -1,0 +1,1 @@
+{"package":"LBBNN","priority":null,"maintainer":"Lars Skaaret-Lund <lars.skaaret-lund@nmbu.no>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.1","check_status":"OK","flags":"","t_install":85.0,"t_check":186.38,"t_total":271.38}]]}

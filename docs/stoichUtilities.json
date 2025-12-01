@@ -1,0 +1,1 @@
+{"package":"stoichUtilities","priority":null,"maintainer":"Chad Petersen <cpetersen4@unl.edu>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"1.0.2","check_status":"OK","flags":"","t_install":40.0,"t_check":176.51,"t_total":216.51}]]}
