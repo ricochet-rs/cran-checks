@@ -1,0 +1,1 @@
+{"package":"colleyRstats","priority":null,"maintainer":"Mark Colley <mark.colley@yahoo.de>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.0.1","check_status":"OK","flags":"","t_install":12.0,"t_check":102.0,"t_total":114.0}]]}
