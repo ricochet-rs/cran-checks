@@ -1,0 +1,1 @@
+{"package":"emplikCS","priority":null,"maintainer":"Mai Zhou <maizhou@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"0.2","check_status":"OK","flags":"","t_install":null,"t_check":null,"t_total":null},{"flavor":"r-oldrel-macos-arm64","version":"0.2","check_status":"OK","flags":"","t_install":1.0,"t_check":14.0,"t_total":15.0}]]}
