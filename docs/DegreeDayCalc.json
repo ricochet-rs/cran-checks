@@ -1,0 +1,1 @@
+{"package":"DegreeDayCalc","priority":null,"maintainer":"Victor Manuel Almaraz Valle <almarazkrae@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-clang","version":"0.1.0","check_status":"OK","flags":"","t_install":9.0,"t_check":84.33,"t_total":93.33}]]}
