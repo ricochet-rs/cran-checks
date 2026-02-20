@@ -1,0 +1,1 @@
+{"package":"rLifting","priority":null,"maintainer":"Moises da Silva <moisesdff8@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.9.0","check_status":"OK","flags":"","t_install":85.0,"t_check":99.0,"t_total":184.0}]]}
