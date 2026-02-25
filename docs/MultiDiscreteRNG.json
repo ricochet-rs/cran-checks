@@ -1,0 +1,1 @@
+{"package":"MultiDiscreteRNG","priority":null,"maintainer":"Chak Kwong (Tommy) Cheng <ccheng46@uic.edu>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.0","check_status":"OK","flags":"","t_install":12.0,"t_check":110.91,"t_total":122.91}]]}

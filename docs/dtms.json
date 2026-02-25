@@ -1,0 +1,1 @@
+{"package":"dtms","priority":null,"maintainer":"Christian Dudel <dudel@demogr.mpg.de>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.4.2","check_status":"OK","flags":"","t_install":7.0,"t_check":82.14,"t_total":89.14}]]}
