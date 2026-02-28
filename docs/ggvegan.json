@@ -1,0 +1,1 @@
+{"package":"ggvegan","priority":null,"maintainer":"Gavin L. Simpson <ucfagls@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-macos-arm64","version":"0.2.1","check_status":"OK","flags":"","t_install":3.0,"t_check":35.0,"t_total":38.0},{"flavor":"r-release-macos-arm64","version":"0.2.1","check_status":"OK","flags":"","t_install":3.0,"t_check":35.0,"t_total":38.0}]]}
