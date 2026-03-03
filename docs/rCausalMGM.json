@@ -1,0 +1,1 @@
+{"package":"rCausalMGM","priority":null,"maintainer":"Panayiotis V Benos <pbenos@ufl.edu>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"1.0","check_status":"NOTE","flags":"","t_install":417.0,"t_check":-125.0,"t_total":292.0}]]}
