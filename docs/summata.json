@@ -1,0 +1,1 @@
+{"package":"summata","priority":null,"maintainer":"Paul Hsin-ti McClelland <PaulHMcClelland@protonmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.11.3","check_status":"OK","flags":"","t_install":24.0,"t_check":231.33,"t_total":255.33}]]}
