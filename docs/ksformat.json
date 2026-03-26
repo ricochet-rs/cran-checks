@@ -1,0 +1,1 @@
+{"package":"ksformat","priority":null,"maintainer":"Vladimir Larchenko <vladimir.larchenko@keystatsolutions.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"0.3.5","check_status":"OK","flags":"","t_install":3.0,"t_check":67.0,"t_total":70.0}]]}
