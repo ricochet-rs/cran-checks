@@ -1,0 +1,1 @@
+{"package":"bayespmtools","priority":null,"maintainer":"Mohsen Sadatsafavi <mohsen.sadatsafavi@ubc.ca>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"0.0.1","check_status":"OK","flags":"","t_install":10.0,"t_check":98.0,"t_total":108.0}]]}

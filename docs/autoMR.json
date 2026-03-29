@@ -1,0 +1,1 @@
+{"package":"autoMR","priority":null,"maintainer":"Kelin Zhong <kelin.zhong@uconn.edu>","issues":[{}],"results":[[{"flavor":"r-devel-macos-arm64","version":"0.1.1","check_status":"OK","flags":"","t_install":4.0,"t_check":32.0,"t_total":36.0},{"flavor":"r-oldrel-macos-x86_64","version":"0.1.1","check_status":"OK","flags":"","t_install":11.0,"t_check":98.0,"t_total":109.0}]]}
