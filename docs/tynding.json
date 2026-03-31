@@ -1,0 +1,1 @@
+{"package":"tynding","priority":null,"maintainer":"Joseph Barbier <joseph@ysunflower.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"0.1.2","check_status":"NOTE","flags":"","t_install":1440.0,"t_check":-316.0,"t_total":1124.0}]]}
