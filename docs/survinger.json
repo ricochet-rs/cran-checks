@@ -1,0 +1,1 @@
+{"package":"survinger","priority":null,"maintainer":"Cuiwei Gao <48gaocuiwei@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-macos-arm64","version":"0.1.0","check_status":"ERROR","flags":"","t_install":2.0,"t_check":36.0,"t_total":38.0},{"flavor":"r-release-macos-arm64","version":"0.1.0","check_status":"ERROR","flags":"","t_install":null,"t_check":null,"t_total":null}]]}
