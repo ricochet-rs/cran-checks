@@ -1,0 +1,1 @@
+{"package":"balnet","priority":null,"maintainer":"Erik Sverdrup <erik.sverdrup@monash.edu>","issues":[{}],"results":[[{"flavor":"r-devel-macos-arm64","version":"0.0.1","check_status":"OK","flags":"","t_install":17.0,"t_check":24.0,"t_total":41.0},{"flavor":"r-release-macos-arm64","version":"0.0.1","check_status":"OK","flags":"","t_install":17.0,"t_check":24.0,"t_total":41.0}]]}
