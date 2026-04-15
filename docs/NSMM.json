@@ -1,0 +1,1 @@
+{"package":"NSMM","priority":null,"maintainer":"Dorsaf Goutali <dorsaf.goutali@inrs.ca>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.2","check_status":"OK","flags":"","t_install":10.0,"t_check":119.0,"t_total":129.0}]]}

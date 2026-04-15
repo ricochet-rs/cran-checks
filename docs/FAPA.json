@@ -1,0 +1,1 @@
+{"package":"FAPA","priority":null,"maintainer":"Se-Kang Kim <se-kang.kim@bcm.edu>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.1","check_status":"OK","flags":"","t_install":2.0,"t_check":114.0,"t_total":116.0}]]}
