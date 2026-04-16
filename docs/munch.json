@@ -1,0 +1,1 @@
+{"package":"munch","priority":null,"maintainer":"David Gohel <david.gohel@ardata.fr>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.0.2","check_status":"OK","flags":"","t_install":17.0,"t_check":256.31,"t_total":273.31}]]}
