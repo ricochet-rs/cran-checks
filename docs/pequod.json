@@ -1,0 +1,1 @@
+{"package":"pequod","priority":null,"maintainer":"Tiago Jacinto <tiagojacinto@med.up.pt>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"0.1.1","check_status":"OK","flags":"","t_install":1.0,"t_check":10.0,"t_total":11.0},{"flavor":"r-oldrel-macos-arm64","version":"0.1.1","check_status":"OK","flags":"","t_install":0.0,"t_check":10.0,"t_total":10.0}]]}
