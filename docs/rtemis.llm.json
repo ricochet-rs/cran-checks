@@ -1,0 +1,1 @@
+{"package":"rtemis.llm","priority":null,"maintainer":"E.D. Gennatas <gennatas@gmail.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-arm64","version":"0.8.1","check_status":"OK","flags":"","t_install":1.0,"t_check":14.0,"t_total":15.0}]]}

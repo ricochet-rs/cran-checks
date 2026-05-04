@@ -1,0 +1,1 @@
+{"package":"heattree","priority":null,"maintainer":"Zachary Foster <zacharyfoster1989@gmail.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-arm64","version":"0.3.1","check_status":"OK","flags":"","t_install":1.0,"t_check":10.0,"t_total":11.0}]]}
