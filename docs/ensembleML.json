@@ -1,0 +1,1 @@
+{"package":"ensembleML","priority":null,"maintainer":"Sadikul Islam <sadikul.islamiasri@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"0.2.5","check_status":"OK","flags":"","t_install":1.0,"t_check":21.0,"t_total":22.0}]]}

@@ -1,0 +1,1 @@
+{"package":"csbewma","priority":null,"maintainer":"Faruk Muritala <fmurital@students.kennesaw.edu>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"1.0.1","check_status":"OK","flags":"","t_install":1.0,"t_check":11.0,"t_total":12.0}]]}

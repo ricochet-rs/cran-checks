@@ -1,0 +1,1 @@
+{"package":"betaStability","priority":null,"maintainer":"Yu Gao <gaoyu19920914@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"0.0.4","check_status":"OK","flags":"","t_install":3.0,"t_check":62.0,"t_total":65.0}]]}
