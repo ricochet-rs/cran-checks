@@ -1,0 +1,1 @@
+{"package":"metainsight","priority":null,"maintainer":"Alex Sutton <ajs22@leicester.ac.uk>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"7.1.0","check_status":"OK","flags":"","t_install":3.0,"t_check":82.0,"t_total":85.0},{"flavor":"r-oldrel-macos-x86_64","version":"7.1.0","check_status":"OK","flags":"","t_install":9.0,"t_check":369.0,"t_total":378.0}]]}
