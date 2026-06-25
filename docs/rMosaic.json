@@ -1,0 +1,1 @@
+{"package":"rMosaic","priority":null,"maintainer":"Timur Rizvanov <timurr@bu.edu>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.3","check_status":"OK","flags":"","t_install":3.0,"t_check":80.0,"t_total":83.0}]]}

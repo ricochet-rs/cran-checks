@@ -1,0 +1,1 @@
+{"package":"taperNOR","priority":null,"maintainer":"Johannes Rahlf <johannes.rahlf@nibio.no>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.2.1","check_status":"OK","flags":"","t_install":2.0,"t_check":28.0,"t_total":30.0}]]}
