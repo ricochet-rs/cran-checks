@@ -1,0 +1,1 @@
+{"package":"Linda","priority":null,"maintainer":"Youhua Chen <chenyh@cib.ac.cn>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"1.3","check_status":"OK","flags":"","t_install":1.0,"t_check":9.0,"t_total":10.0}]]}
