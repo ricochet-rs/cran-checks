@@ -1,0 +1,1 @@
+{"package":"agentr","priority":null,"maintainer":"Oliver Zhou <oliver.yxzhou@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.2.8.4","check_status":"OK","flags":"","t_install":28.0,"t_check":83.1,"t_total":111.1}]]}
