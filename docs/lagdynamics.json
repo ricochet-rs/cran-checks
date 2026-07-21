@@ -1,0 +1,1 @@
+{"package":"lagdynamics","priority":null,"maintainer":"Mohammed Saqr <saqr@saqr.me>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"0.32","check_status":"OK","flags":"","t_install":5.0,"t_check":485.0,"t_total":490.0}]]}

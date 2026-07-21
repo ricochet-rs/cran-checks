@@ -1,0 +1,1 @@
+{"package":"rwevalidate","priority":null,"maintainer":"Hamid Tavakoli <htavakoli@gmail.com>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"0.1.2","check_status":"OK","flags":"","t_install":2.0,"t_check":153.0,"t_total":155.0}]]}
