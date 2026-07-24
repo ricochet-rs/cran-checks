@@ -1,0 +1,1 @@
+{"package":"IRTC","priority":null,"maintainer":"Kunxiang Ma <makunxiang@weiandata.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"1.1.1","check_status":"OK","flags":"","t_install":15.0,"t_check":88.0,"t_total":103.0},{"flavor":"r-oldrel-macos-arm64","version":"1.1.1","check_status":"OK","flags":"","t_install":11.0,"t_check":90.0,"t_total":101.0}]]}

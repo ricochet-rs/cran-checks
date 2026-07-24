@@ -1,0 +1,1 @@
+{"package":"RAS","priority":null,"maintainer":"Jiahe Jin <jiahe.jin@yale.edu>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"1.0.3","check_status":"OK","flags":"","t_install":2.0,"t_check":14.0,"t_total":16.0},{"flavor":"r-oldrel-macos-arm64","version":"1.0.3","check_status":"OK","flags":"","t_install":1.0,"t_check":20.0,"t_total":21.0}]]}
