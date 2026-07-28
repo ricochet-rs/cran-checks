@@ -1,0 +1,1 @@
+{"package":"MultiEFM","priority":null,"maintainer":"Ruihan Zhang <ruihanzhang6166@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.1.3","check_status":"OK","flags":"","t_install":28.0,"t_check":55.519999999999996,"t_total":83.52}]]}

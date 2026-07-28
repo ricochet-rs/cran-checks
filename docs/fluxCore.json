@@ -1,0 +1,1 @@
+{"package":"fluxCore","priority":null,"maintainer":"Jarrod Dalton <daltonj@ccf.org>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"2.0.0","check_status":"OK","flags":"","t_install":5.0,"t_check":29.509999999999998,"t_total":34.51}]]}

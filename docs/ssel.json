@@ -1,0 +1,1 @@
+{"package":"ssel","priority":null,"maintainer":"Alejandro Verri Kozlowski <averri@fi.uba.ar>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.3.1","check_status":"OK","flags":"","t_install":13.0,"t_check":114.91,"t_total":127.91}]]}
