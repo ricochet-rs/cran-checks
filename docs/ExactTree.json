@@ -1,0 +1,1 @@
+{"package":"ExactTree","priority":null,"maintainer":"Juan Claramunt Gonzalez <j.claramunt.gonzalez@fsw.leidenuniv.nl>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.1","check_status":"ERROR","flags":"","t_install":1.0,"t_check":11.0,"t_total":12.0}]]}
