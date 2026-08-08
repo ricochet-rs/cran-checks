@@ -1,0 +1,1 @@
+{"package":"HeatStressR","priority":null,"maintainer":"Yifei Zheng <zyf0717@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"2.2.1","check_status":"OK","flags":"","t_install":3.0,"t_check":64.0,"t_total":67.0}]]}
