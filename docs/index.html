@@ -28,30 +28,42 @@
       <details>
         <summary>JSON output</summary>
         <pre class="bg-zinc-800">{
-    "package": "b64",
-    "priority": null,
-    "maintainer": "Josiah Parry &lt;josiah.parry@gmail.com&gt;",
+    "package": [
+        "b64",
+        "b64"
+    ],
+    "priority": [
+        "",
+        null
+    ],
+    "maintainer": [
+        "Josiah Parry &lt;josiah.parry@gmail.com&gt;",
+        "Josiah Parry &lt;josiah.parry@gmail.com&gt;"
+    ],
     "issues": [
+        {},
         {}
     ],
     "results": [
         [
             {
                 "flavor": "r-devel-linux-x86_64-debian-clang",
-                "version": "0.1.7",
+                "version": "",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 54.53,
-                "t_check": 23.06,
-                "t_total": 77.59
-            },
+                "t_check": null,
+                "t_install": null,
+                "t_total": null
+            }
+        ],
+        [
             {
                 "flavor": "r-devel-linux-x86_64-debian-gcc",
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 44.3,
                 "t_check": 21.65,
+                "t_install": 44.3,
                 "t_total": 65.95
             },
             {
@@ -59,8 +71,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 34.0,
                 "t_check": 15.799999999999995,
+                "t_install": 34.0,
                 "t_total": 49.8
             },
             {
@@ -68,8 +80,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 34.0,
                 "t_check": 16.6,
+                "t_install": 34.0,
                 "t_total": 50.6
             },
             {
@@ -77,8 +89,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 69.0,
                 "t_check": 46.0,
+                "t_install": 69.0,
                 "t_total": 115.0
             },
             {
@@ -86,8 +98,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 55.82,
                 "t_check": 20.03,
+                "t_install": 55.82,
                 "t_total": 75.85
             },
             {
@@ -95,8 +107,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 53.34,
                 "t_check": 19.77,
+                "t_install": 53.34,
                 "t_total": 73.11
             },
             {
@@ -104,8 +116,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 12.0,
                 "t_check": 8.0,
+                "t_install": 12.0,
                 "t_total": 20.0
             },
             {
@@ -113,8 +125,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 40.0,
                 "t_check": 38.0,
+                "t_install": 40.0,
                 "t_total": 78.0
             },
             {
@@ -122,8 +134,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 69.0,
                 "t_check": 49.0,
+                "t_install": 69.0,
                 "t_total": 118.0
             },
             {
@@ -131,8 +143,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": null,
                 "t_check": null,
+                "t_install": null,
                 "t_total": null
             },
             {
@@ -140,8 +152,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 37.0,
                 "t_check": 49.0,
+                "t_install": 37.0,
                 "t_total": 86.0
             },
             {
@@ -149,8 +161,8 @@
                 "version": "0.1.7",
                 "check_status": "OK",
                 "flags": "",
-                "t_install": 70.0,
                 "t_check": 51.0,
+                "t_install": 70.0,
                 "t_total": 121.0
             }
         ]
@@ -633,6 +645,15 @@
           <td>1.1.10</td>
           <td>
             <a href="https://raw.githubusercontent.com/bastistician/Rcheck/refs/heads/results/musl/issues/GENLIB.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">musl</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=GIFT" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">GIFT</a>
+          </td>
+          <td>1.3.3</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/M1mac/GIFT.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">M1mac</a>
           </td>
         </tr>
         <tr>
@@ -2037,6 +2058,15 @@
           <td>0.1.0</td>
           <td>
             <a href="https://www.stats.ox.ac.uk/pub/bdr/Rblas/MKL/chiOpenData.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">MKL</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://cran.r-project.org/package=childfree" class="font-mono hover:font-bold decoration-dotted decoration-indigo-500 hover:decoration-solid">childfree</a>
+          </td>
+          <td>0.0.5</td>
+          <td>
+            <a href="https://www.stats.ox.ac.uk/pub/bdr/noLD/childfree.out" class="decoration decoration-dotted text-zinc-200 hover:text-white font-mono decoration-rose-500 hover:decoration-solid">noLD</a>
           </td>
         </tr>
         <tr>
