@@ -1,0 +1,34 @@
+name: Instructions
+
+on:
+  pull_request:
+    types: [opened, synchronize, edited, reopened, ready_for_review]
+  push:
+    branches: [main]
+
+jobs:
+  paired-pr:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.agent_instructions_token }}
+    steps:
+      - name: Load shared instructions
+        run: gh repo clone ricochet-rs/agent-instructions "$RUNNER_TEMP/agent-instructions" -- --depth=1
+      - name: Validate paired instructions PR
+        run: >-
+          "$RUNNER_TEMP/agent-instructions/scripts/paired-instructions-pr.sh"
+          check "$GITHUB_REPOSITORY" "${{ github.event.pull_request.number }}"
+
+  merge-paired-pr:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.agent_instructions_token }}
+    steps:
+      - name: Load shared instructions
+        run: gh repo clone ricochet-rs/agent-instructions "$RUNNER_TEMP/agent-instructions" -- --depth=1
+      - name: Merge paired instructions PR
+        run: >-
+          "$RUNNER_TEMP/agent-instructions/scripts/paired-instructions-pr.sh"
+          merge-for-commit "$GITHUB_REPOSITORY" "$GITHUB_SHA"
