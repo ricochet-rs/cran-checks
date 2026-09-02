@@ -1,0 +1,1 @@
+{"package":"mwana","priority":null,"maintainer":"Tomás Zaba <tomas.zaba@outlook.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.2.5","check_status":"OK","flags":"","t_install":10.0,"t_check":219.11,"t_total":229.11}]]}
