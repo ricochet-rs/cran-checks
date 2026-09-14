@@ -1,0 +1,1 @@
+{"package":"koopman.dmd","priority":null,"maintainer":"James Harris <jimeharrisjr@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.2.2","check_status":"OK","flags":"","t_install":340.0,"t_check":70.0,"t_total":410.0}]]}
