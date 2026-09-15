@@ -1,0 +1,1 @@
+{"package":"coinclp","priority":null,"maintainer":"Sam Lovick <sam@lovickconsulting.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.0","check_status":"OK","flags":"","t_install":13.0,"t_check":111.0,"t_total":124.0},{"flavor":"r-oldrel-macos-arm64","version":"0.1.0","check_status":"OK","flags":"","t_install":4.0,"t_check":57.0,"t_total":61.0}]]}
