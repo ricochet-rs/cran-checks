@@ -1,0 +1,1 @@
+{"package":"bgns","priority":null,"maintainer":"Aditya Kshirsagar <adityaksh4@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.4.3","check_status":"OK","flags":"","t_install":19.0,"t_check":90.0,"t_total":109.0}]]}

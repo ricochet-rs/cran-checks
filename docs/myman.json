@@ -1,0 +1,1 @@
+{"package":"myman","priority":null,"maintainer":"Dirk Eddelbuettel <edd@debian.org>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.0","check_status":"OK","flags":"","t_install":2.0,"t_check":35.0,"t_total":37.0},{"flavor":"r-oldrel-macos-x86_64","version":"0.1.0","check_status":"OK","flags":"","t_install":1.0,"t_check":40.0,"t_total":41.0}]]}

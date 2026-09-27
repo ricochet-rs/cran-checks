@@ -1,0 +1,1 @@
+{"package":"insectecol","priority":null,"maintainer":"Wangyao Li <1561941342@qq.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"1.0.1","check_status":"OK","flags":"","t_install":7.0,"t_check":102.0,"t_total":109.0},{"flavor":"r-oldrel-macos-x86_64","version":"1.0.1","check_status":"OK","flags":"","t_install":7.0,"t_check":95.0,"t_total":102.0}]]}

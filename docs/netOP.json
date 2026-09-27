@@ -1,0 +1,1 @@
+{"package":"netOP","priority":null,"maintainer":"Sayan Chakrabarty <sayanc@umich.edu>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.2","check_status":"OK","flags":"","t_install":48.0,"t_check":166.0,"t_total":214.0}]]}

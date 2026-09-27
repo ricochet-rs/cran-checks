@@ -1,0 +1,1 @@
+{"package":"winn","priority":null,"maintainer":"Tanmay Tanna <tanmay@tanmaytanna.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.1.5","check_status":"OK","flags":"","t_install":3.0,"t_check":86.0,"t_total":89.0}]]}
