@@ -1,0 +1,1 @@
+{"package":"dragonfarm","priority":null,"maintainer":"Tejas Patel <algocrat@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"0.3.3","check_status":"OK","flags":"","t_install":3.0,"t_check":41.0,"t_total":44.0},{"flavor":"r-oldrel-macos-arm64","version":"0.3.3","check_status":"OK","flags":"","t_install":4.0,"t_check":52.0,"t_total":56.0}]]}
