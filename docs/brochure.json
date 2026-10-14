@@ -1,0 +1,1 @@
+{"package":"brochure","priority":null,"maintainer":"Colin Fay <contact@colinfay.me>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"1.0.0","check_status":"OK","flags":"","t_install":null,"t_check":null,"t_total":null},{"flavor":"r-oldrel-macos-x86_64","version":"1.0.0","check_status":"OK","flags":"","t_install":4.0,"t_check":91.0,"t_total":95.0}]]}

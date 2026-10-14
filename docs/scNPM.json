@@ -1,0 +1,1 @@
+{"package":"scNPM","priority":null,"maintainer":"Tao Liu <25210690190@m.fudan.edu.cn>","issues":[{}],"results":[[{"flavor":"r-oldrel-macos-x86_64","version":"1.0.6","check_status":"ERROR","flags":"","t_install":42.0,"t_check":195.0,"t_total":237.0}]]}
