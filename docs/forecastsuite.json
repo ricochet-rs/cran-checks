@@ -1,0 +1,1 @@
+{"package":"forecastsuite","priority":null,"maintainer":"Mukul Maheshwari <ryan00700@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-clang","version":"1.0.2","check_status":"OK","flags":"","t_install":5.0,"t_check":186.0,"t_total":191.0}]]}
