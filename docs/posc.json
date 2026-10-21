@@ -1,0 +1,1 @@
+{"package":"posc","priority":null,"maintainer":"Matthew B. Jané <matthewbjane@gmail.com>","issues":[{}],"results":[[{"flavor":"r-release-macos-x86_64","version":"0.2.0","check_status":"OK","flags":"","t_install":5.0,"t_check":160.0,"t_total":165.0}]]}
