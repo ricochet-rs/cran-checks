@@ -1,0 +1,1 @@
+{"package":"DDAWASS","priority":null,"maintainer":"Antonio Irpino <antonio.irpino@unicampania.it>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"1.0.0","check_status":"OK","flags":"","t_install":21.0,"t_check":131.88,"t_total":152.88}]]}
