@@ -1,0 +1,1 @@
+{"package":"form.model","priority":null,"maintainer":"Tony Chemit <dev@tchemit.fr>","issues":[{}],"results":[[{"flavor":"r-release-macos-arm64","version":"0.3.2","check_status":"OK","flags":"","t_install":1.0,"t_check":21.0,"t_total":22.0}]]}
