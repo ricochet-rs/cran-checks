@@ -1,0 +1,1 @@
+{"package":"propop","priority":null,"maintainer":"Norah Efosa <norah.efosa@ag.ch>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"2.2.1","check_status":"OK","flags":"","t_install":5.0,"t_check":113.13,"t_total":118.13}]]}
