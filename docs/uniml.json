@@ -1,0 +1,1 @@
+{"package":"uniml","priority":null,"maintainer":"Steve Shi <19943405117@163.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"0.5.1","check_status":"OK","flags":"","t_install":14.0,"t_check":402.01,"t_total":416.01}]]}
