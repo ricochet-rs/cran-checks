@@ -1,0 +1,1 @@
+{"package":"Stem","priority":null,"maintainer":"Paolo Maranzano <pmaranzano.ricercastatistica@gmail.com>","issues":[{}],"results":[[{"flavor":"r-devel-linux-x86_64-fedora-gcc","version":"2.0.0","check_status":"OK","flags":"","t_install":5.0,"t_check":353.48,"t_total":358.48}]]}
